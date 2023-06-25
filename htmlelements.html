@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&family=Lato:wght@400;700;900&family=Montserrat:ital,wght@0,500;0,600;1,600&family=Poppins:wght@200;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>HTML : Elements</title>
+</head>
+<body>
+    <div class="course-header">
+        <div class="course-logo">
+            <h1>DevMate</h1>
+        </div>
+        <div class="course-home-button course-button">
+            <a href="home.html">HOME</a>
+        </div>
+        <div class="course-login-button course-button">
+            <a href="loginPage.html">LOGIN</a>
+        </div>
+    </div>
+    <div class="html-intro-container">
+        <div class="index-section">
+            <h3>HTML:Syllabus</h3>
+            <ul>
+                <li><a href="htmlIntro.html">Introduction</a></li>
+                <li><a href="htmlelements.html">HTML Elements</a></li>
+                <li><a href="#">HTML Attributes</a></li>
+                <li><a href="#">HTML Headings</a></li>
+                <li><a href="#">HTML Paragraphs</a></li>
+                <li><a href="#">HTML Style</a></li>
+                <li><a href="#">HTML Images</a></li>
+                <li><a href="#">HTML Lists</a></li>
+                <li><a href="#">HTML tables</a></li>
+                <li><a href="#">HTML Block & Inline</a></li>
+                <li><a href="#">HTML Favicon</a></li>
+                <li><a href="#">HTML Classes</a></li>
+                <li><a href="#">HTML Id</a></li>
+                <li><a href="#">HTML Forms</a></li>
+                <li><a href="#">HTML Forms Elements </a></li>
+                <li><a href="#">HTML Media</a></li>
+                <li><a href="#">HTML References</a></li>
+            </ul>
+        </div>
+        <div class="html-element-section text-section">
+            <div class="element-head">
+                <h1>Html Elements</h1>
+            </div>
+            <div class="element-content">
+                <p>An HTML element is defined by a start tag , some content, and an end tag. Basically html element is everything from the start tag to the end tag.</p>
+                <br>
+                <p>Example of html element :</p>
+                <p>&lt;tagname&gt; Content &lt;/tagname&gt;</p>
+                <br>
+                <p style="background-color: #dea6d6;" >Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag</p>
+                <div class="line"></div>
+                <h3>Nested HTML Element</h3>
+                <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+                <p>All HTML documents consist of nested HTML elements.</p>
+                <br>
+                <p>The &lt;html&gt; element is the root element and it defines the whole HTML document.</p>
+                <p>It has a start tag &lt;html&gt; and an end tag &lt;/html&gt;.</p>
+                <p>Then, inside the &lt;html&gt; element there is a &lt;body&gt; element</p>
+                <p>The &lt;body&gt; element defines the document's body.</p>
+                <p>It has a start tag &lt;body&gt; and an end tag &lt;/body&gt;</p>
+                <p>Then, inside the &lt;body&gt; element there are two other elements: &lt;h1&gt; and &lt;p&gt;</p>
+                <p>The &lt;h1&gt; element defines a heading.</p> 
+                <p>It has a start tag &lt;h1&gt; and an end tag &lt;/h1&gt;</p>  
+                <p>The &lt;p&gt; element defines a paragraph.
+                <p>It has a start tag &lt;p&gt; and an end tag &lt;/p&gt;</p>
+                <div class="line"></div>
+                <div class="element-example">
+                    <p> <u>Example :</u> </p>
+                    <div class="element-example-content">
+                        <p>&lt;!doctype html&gt;</p>
+                        <p style="margin-left:1rem ;">&lt;html&gt;</p>
+                        <p style="margin-left:2rem ;">&lt;head&gt;</p>
+                        <p style="margin-left:3rem ;">&lt;title&gt;</p>
+                        <p style="margin-left:4rem ;">This is title of website</p>
+                        <p style="margin-left:3rem ;">&lt;/title&gt;</p>
+                        <p style="margin-left:2rem ;">&lt;/head&gt;</p>
+                        <p style="margin-left:2rem ;">&lt;body&gt;</p>
+                        <p style="margin-left:3rem ;">&lt;head&gt;</p>
+                        <p style="margin-left:4rem ;">&lt;h1&gt;This is heading&lt;/h1&gt;</p>
+                        <p style="margin-left:4rem ;">&lt;p&gt;This is paragraph&lt;/p&gt;</p>
+                        <p style="margin-left:2rem ;">&lt;/body&gt;</p>
+                        <p style="margin-left:1rem ;">&lt;/html&gt;</p>
+                    </div>
+                    <div class="element-example-output">
+                        <h1>This is Heading</h1>
+                        <p>This is paragraph</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <h3>Empty Elements</h3>
+                <p>HTML elements with no content are called empty elements.</p>
+                <p>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag</p>
+                <h3 style="background-color: #dea6d6; width: 5rem;">Note :</h3>
+                <p>Never skip the end tag.</p>
+                <p>Some HTML elements will display correctly, even if you forget the end tag but unexpected results and errors may occur if you forget the end tag.</p>
+                <!-- <div class="line"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="next-button">
+        <a href="#"><button>NEXT</button></a>
+    </div>
+    <footer>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+        </div>
+        <div class="footer-head">
+           <h3> DevMate &copy; 2023 . All Right Reserved.</h3>
+        </div>
+        <div class="about-privacy">
+            <p class="about"><a href="#"x>About</a></p>
+            <p><a href="#">Privacy and Terms</a></p>
+        </div>
+    </footer>
+</body>
+</html>
